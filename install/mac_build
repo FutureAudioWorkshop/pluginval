@@ -96,4 +96,6 @@ mkdir -p "$DEPLOYMENT_DIR"
 
 echo "\nDeploying to: " $DEPLOYMENT_DIR
 cd "$APP_DIR"
+#cp "$APP_NAME" "$DEPLOYMENT_DIR/$APP_NAME"
 zip -r "$DEPLOYMENT_DIR/$ZIP_NAME" "$APP_NAME"
+unzip "$ZIP_NAME"
